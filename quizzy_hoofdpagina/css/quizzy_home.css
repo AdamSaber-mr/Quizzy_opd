@@ -1,0 +1,109 @@
+/*   
+font-family: "Lilita One", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Alexandria", sans-serif;
+*/
+
+html, body {
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 200vh;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #9F72B8;
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 12px;
+}
+#logo {
+    position: absolute;
+    left: 0;
+    margin-left: 40px;
+    font-family: "Lilita One", sans-serif;
+    font-size: 45px;
+    cursor: pointer;
+}
+#speel-nu {
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    background-color: #FEDC25;
+    color: black;
+    border-radius: 10px;
+    padding: 12px 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30vh;
+    margin-right: 375px;
+}
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+}
+.nav-items a:hover {
+    color: #4e196b;
+}
+#speel-nu:hover {
+    background-color: #c1a503;
+}
+#sec1-h2-boven {
+    margin-top: 75px;
+    margin-bottom: 5px;
+}
+.sec1-h2 {
+    font-family: "Alexandria", sans-serif;
+    font-size: 45px;
+}
+#sec1-h2-onder {
+    margin-bottom: 50px;
+}
+#sec1-text {
+    width: 700px;
+    margin-bottom: 70px;
+    font-family: "Alexandria", sans-serif;
+}
+.sec1-knoppen {
+    display: flex;
+    align-items: center;
+    gap: 20vh;
+}
+#sec1-knop1 {
+    background-color: #9F72B8;
+    color: white;
+    padding: 20px 80px;
+    border-radius: 100px;
+    font-family: "Alexandria", sans-serif;
+    font-size: 20px;
+}
+#sec1-knop2 {
+    font-family: "Alexandria", sans-serif;
+    font-size: 20px;
+}
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+}
