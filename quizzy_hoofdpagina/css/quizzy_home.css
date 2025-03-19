@@ -11,6 +11,7 @@ html, body {
     margin-top: 20px;
     margin-bottom: 20px;
     min-height: 200vh;
+    background-color: #fcf7ff;
 }
 * {
     box-sizing: border-box;
@@ -70,21 +71,25 @@ html, body {
 #speel-nu:hover {
     background-color: #c1a503;
 }
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.sec1-items {
+    margin-top: 40px;
+}
 #sec1-h2-boven {
     margin-top: 75px;
     margin-bottom: 5px;
 }
 .sec1-h2 {
     font-family: "Alexandria", sans-serif;
-    font-size: 45px;
+    font-size: 50px;
 }
 #sec1-h2-onder {
     margin-bottom: 50px;
-}
-#sec1-text {
-    width: 700px;
-    margin-bottom: 70px;
-    font-family: "Alexandria", sans-serif;
 }
 .sec1-knoppen {
     display: flex;
@@ -103,7 +108,76 @@ html, body {
     font-family: "Alexandria", sans-serif;
     font-size: 20px;
 }
-.section-1 {
+#sec1-text {
+    width: 1000px;
+    line-height: 22px;
+    margin-bottom: 75px;
+    font-family: "Alexandria", sans-serif;
+}
+#quiz-pic {
+    width: 500px;
+    margin-top: 25px;
+}
+.tussenline-1 {
+    height: 2px;
+    background-color: hsla(0, 0%, 0%, 0.05);
+    border: none;
+    margin-top: 25px;
+}
+.section-2 {
     display: flex;
     justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 100px;
+}
+.sec2-items {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#sec2-h2-boven {
+    font-family: "Alexandria", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #9F72B8;
+    margin-bottom: 5px;
+}
+.sec2-h2 {
+    font-family: "Alexandria", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+#sec2-h2-onder {
+    margin-bottom: 30px;
+}
+#sec2-text {
+    font-family: "Alexandria", sans-serif;
+    width: 780px;
+}
+.sec2-foto {
+    background-color: #9F72B8;
+    padding: 40px;
+    border-radius: 20px;
+}
+#tweede-pic {
+    width: 600px;
+}
+.tussenline-2 {
+    height: 2px;
+    background-color: hsla(0, 0%, 0%, 0.05);
+    border: none;
+    margin-top: 100px;
+}
+.sec3-h2 {
+    margin-top: 100px;
+    font-family: "Alexandria", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+.section-3 {
+    margin-left: 25px;
+    margin-right: 25px;
 }
