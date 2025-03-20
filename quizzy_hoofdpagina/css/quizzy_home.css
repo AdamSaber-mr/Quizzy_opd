@@ -58,6 +58,7 @@ html, body {
     list-style: none;
     gap: 30vh;
     margin-right: 375px;
+    margin-left: 50px;
 }
 .nav-items a {
     text-decoration: none;
@@ -65,8 +66,22 @@ html, body {
     font-family: "Roboto", sans-serif;
     font-size: 22px;
 }
-.nav-items a:hover {
-    color: #4e196b;
+.nav-items li {
+    position: relative;
+}
+.nav-items li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2.5px;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-50%);
+}
+.nav-items li:hover::after {
+    width: 100%;
 }
 #speel-nu:hover {
     background-color: #c1a503;
@@ -103,10 +118,17 @@ html, body {
     border-radius: 100px;
     font-family: "Alexandria", sans-serif;
     font-size: 20px;
+    cursor: pointer;
+}
+#sec1-knop1:hover {
+    background-color: #6f4d81;
 }
 #sec1-knop2 {
     font-family: "Alexandria", sans-serif;
     font-size: 20px;
+}
+#sec1-knop2 p {
+    cursor: pointer;
 }
 #sec1-text {
     width: 1000px;
@@ -133,7 +155,7 @@ html, body {
 }
 .sec2-items {
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 #sec2-h2-boven {
     font-family: "Alexandria", sans-serif;
@@ -182,12 +204,34 @@ html, body {
     margin-right: 25px;
 }
 .sec3-titel {
-    margin-bottom: 100px;
+    margin-bottom: 125px;
 }
 .sec3-items {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 150px;
+}
+.sec3-item1 {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.sec3-item2 {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.sec3-item3 {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.sec3-item1:hover {
+    transform: scale(1.1);
+}
+.sec3-item2:hover {
+    transform: scale(1.1);
+}
+.sec3-item3:hover {
+    transform: scale(1.1);
 }
 .sec3-pics {
     width: 500px;
@@ -200,8 +244,14 @@ html, body {
     padding: 30px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    box-shadow: 0 4px 5px -2px #808080bf;
+}
+.sec3-text-boven {
     font-family: "Alexandria", sans-serif;
     font-weight: bold;
     font-size: 20px;
-    box-shadow: 0 4px 10px -2px #808080d6;
+}
+.sec3-text-onder {
+    font-size: 15px;
+    font-family: "Alexandria", sans-serif;
 }

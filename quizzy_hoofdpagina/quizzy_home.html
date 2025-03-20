@@ -18,13 +18,13 @@
             <nav class="navbar-box">
                 <ul class="nav-items">
                     <li><a href="">Hoofdpagina</a></li>
-                    <li><a href="">Quiz</a></li>
+                    <li><a href="">Quiz Spelen</a></li>
                     <li><a href="">Informatie</a></li>
                 </ul>
             </nav>
 
             <a id="speel-nu">
-                <div>Speel Nu</div>
+                <div onclick="scrollTo1()">Speel Nu</div>
             </a>
 
     </header> 
@@ -45,7 +45,7 @@
 
             <div class="sec1-knoppen">
                 <a id="sec1-knop1">
-                    <div>Speel Nu</div>
+                    <div onclick="scrollTo2()">Speel Nu</div>
                 </a>
                 <a id="sec1-knop2">
                     <p>Informatie voor de quiz</p>
@@ -87,7 +87,7 @@
 
         <div class="tussenline-2"></div>
 
-    <section class="section-3">
+    <section class="section-3" id="section-3">
 
         <div class="sec3-titel">
             <h2 class="sec3-h2">Kies een categorie</h2>
@@ -97,25 +97,33 @@
 
             <div class="sec3-item1">
                 <img src="../media/image 4 (1).png" class="sec3-pics">
-                <p class="sec3-text">Democratie algemeen</p>
-                <p>In totaal 15 vragen</p>
+                <div class="sec3-text">
+                    <p class="sec3-text-boven">Democratie algemeen</p>
+                    <p class="sec3-text-onder">In totaal 15 vragen</p>
+                </div>
             </div>
 
             <div class="sec3-item2">
                 <img src="../media/Flag_of_the_Netherlands.png" class="sec3-pics">
-                <p class="sec3-text">Democratie in Nederland</p>
-                <p>In totaal 15 vragen</p>
+                <div class="sec3-text">
+                    <p class="sec3-text-boven">Democratie in Nederland</p>
+                    <p class="sec3-text-onder">In totaal 15 vragen</p>
+                </div>
             </div>
 
             <div class="sec3-item3">
                 <img src="../media/Flag_of_Belgium.png" class="sec3-pics">
-                <p class="sec3-text">Democratie in België</p>
-                <p>In totaal 15 vragen</p>
+                <div class="sec3-text">
+                    <p class="sec3-text-boven">Democratie in België</p>
+                    <p class="sec3-text-onder">In totaal 15 vragen</p>
+                </div>
             </div>
             
         </div>
 
     </section>
 
+
+    <script src="./javascript/quizzy_home.js"></script>
 </body>
 </html>
