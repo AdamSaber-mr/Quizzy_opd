@@ -88,14 +88,14 @@ html, body {
 }
 .section-1 {
     background: linear-gradient(#AE74CE, #5E5B95);
-    height: 700px;
     border-radius: 20px;
+    height: 1000px;
     margin-top: 100px;
     margin-left: 25px;
     margin-right: 25px;
 }
 .sec1-boven {
-    position: absolute;
+    display: inline-block;
     margin-left: 75px;
     margin-top: 50px;
 }
@@ -106,8 +106,34 @@ html, body {
     color: #7E16B8;
     margin-bottom: 20px;
 }
-#sec1-vragen {
+#sec1-vraag {
     font-family: "Alexandria", sans-serif;
     font-weight: bold;
     font-size: 25px;
+}
+.sect1-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec1-opties {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    gap: 100px;
+}
+.sec1-opties input {
+    display: none;
+}
+.ant-opties {
+    background-color: #FEDC25;
+    padding: 25px 225px;
+    border-radius: 20px;
+}
+.sec1-fotos {
+    margin-right: 75px;
+}
+#sec1-foto {
+    border-radius: 20px;
+    width: 550px;
 }
