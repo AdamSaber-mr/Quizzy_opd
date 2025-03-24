@@ -89,7 +89,7 @@ html, body {
 .section-1 {
     background: linear-gradient(#AE74CE, #5E5B95);
     border-radius: 20px;
-    height: 1000px;
+    height: 1150px;
     margin-top: 100px;
     margin-left: 25px;
     margin-right: 25px;
@@ -102,25 +102,26 @@ html, body {
 #sec1-titel {
     font-family: "Alexandria", sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     color: #7E16B8;
     margin-bottom: 20px;
 }
 #sec1-vraag {
     font-family: "Alexandria", sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 35px;
 }
 .sect1-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 75px;
 }
 .sec1-opties {
     display: flex;
     flex-direction: column;
     margin-left: 75px;
-    gap: 100px;
+    gap: 80px;
 }
 .sec1-opties input {
     display: none;
@@ -129,11 +130,53 @@ html, body {
     background-color: #FEDC25;
     padding: 25px 225px;
     border-radius: 20px;
+    width: 700px;
+}
+.sec1-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec1-vraagnummer {
+    position: absolute;
+    left: 200px;
+    font-family: "Alexandria", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.sec1-vraagtext {
+    font-family: "Alexandria", sans-serif;
+    font-size: 19px;
 }
 .sec1-fotos {
     margin-right: 75px;
 }
 #sec1-foto {
     border-radius: 20px;
-    width: 550px;
+    width: 500px;
+}
+.sec1-onderkant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 75px;
+    margin-right: 150px;
+}
+#sec1-volgende-knop {
+    background-color: #FEDC25;
+    padding: 25px 225px;
+    border-radius: 20px;
+    width: 700px;
+    font-family: "Alexandria", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#sec1-vorige-knop {
+    background-color: #FEDC25;
+    padding: 25px 100px;
+    border-radius: 20px;
+    font-family: "Alexandria", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
