@@ -59,7 +59,34 @@ function controleerAntwoord(antwoord) {
     }
 }
 
-// De vragen die we later gaan in laden in html
+// De afbeeldingen die we gaan veranderen
+function veranderAfbeelding() {
+    let afbeeldingElement = document.getElementById("sec1-foto");
+
+    let afbeeldingen = [
+        "../media/staatsvorm.jpg",
+        "../media/macht.jpg",
+        "../media/gewesten.png",
+        "../media/verkiezingen.jpg",
+        "../media/gemeenschappen.jpg",
+        "../media/koning.jpg",
+        "../media/politiek.webp",
+        "../media/gemeente.jpeg",
+        "../media/onderhandeling.jpg",
+        "../media/rechten.avif",
+        "../media/democratie.jpeg",
+        "../media/regeringsvorming.webp",
+        "../media/meerpartijenstelsel.webp",
+        "../media/wetgevende.avif",
+        "../media/triaspolitica.jpg"
+    ];
+
+    if (huidigeVraag < afbeeldingen.length) {
+        afbeeldingElement.src = afbeeldingen[huidigeVraag];
+    }
+}
+
+// De vragen die we later gaan inladen in html
 
 function laadVraag() {
     if (huidigeVraag < vragen.length) {
@@ -97,6 +124,7 @@ function laadVraag() {
                 antwoordGeselecteerd = openVraagInput.value.trim() !== ""; 
             });
         }
+        veranderAfbeelding();
         startTimer();
     } else {
         let tekstVoltooid = "<h2>Quiz Voltooid!</h2>";
