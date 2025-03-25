@@ -10,7 +10,7 @@ html, body {
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    min-height: 250vh;
+    min-height: 140vh;
     background-color: #fcf7ff;
 }
 * {
@@ -104,7 +104,8 @@ html, body {
     margin-left: 75px;
 }
 .sec1-boven-rechts {
-    margin-right: 75px;
+    margin-right: 200px;
+    margin-top: 25px;
 }
 #sec1-titel {
     font-family: "Alexandria", sans-serif;
