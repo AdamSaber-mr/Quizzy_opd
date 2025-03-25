@@ -94,10 +94,17 @@ html, body {
     margin-left: 25px;
     margin-right: 25px;
 }
-.sec1-boven {
-    display: inline-block;
-    margin-left: 75px;
+.sec1-bovenkant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec1-boven-links {
     margin-top: 50px;
+    margin-left: 75px;
+}
+.sec1-boven-rechts {
+    margin-right: 75px;
 }
 #sec1-titel {
     font-family: "Alexandria", sans-serif;
@@ -110,6 +117,10 @@ html, body {
     font-family: "Alexandria", sans-serif;
     font-weight: bold;
     font-size: 35px;
+}
+#sec1-timer {
+    font-family: "Alexandria", sans-serif;
+    font-size: 25px;
 }
 .sect1-items {
     display: flex;
@@ -131,6 +142,10 @@ html, body {
     padding: 25px 225px;
     border-radius: 20px;
     width: 700px;
+    cursor: pointer;
+}
+.ant-opties:hover {
+    background-color: #c1a503;
 }
 .sec1-text {
     display: flex;
@@ -171,6 +186,7 @@ html, body {
     font-family: "Alexandria", sans-serif;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 #sec1-vorige-knop {
     background-color: #FEDC25;
@@ -179,4 +195,11 @@ html, body {
     font-family: "Alexandria", sans-serif;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
+}
+#sec1-vorige-knop:hover {
+    background-color: #c1a503;
+}
+#sec1-volgende-knop:hover {
+    background-color: #c1a503;
 }
