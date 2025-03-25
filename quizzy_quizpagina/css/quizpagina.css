@@ -89,7 +89,7 @@ html, body {
 .section-1 {
     background: linear-gradient(#AE74CE, #5E5B95);
     border-radius: 20px;
-    height: 1150px;
+    height: 1200px;
     margin-top: 100px;
     margin-left: 25px;
     margin-right: 25px;
@@ -203,4 +203,11 @@ html, body {
 }
 #sec1-volgende-knop:hover {
     background-color: #c1a503;
+}
+#resultaat {
+    font-family: "Alexandria", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
 }
