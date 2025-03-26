@@ -43,19 +43,29 @@ let antwoordGeselecteerd = false;
 // Controleert het antwoord
 
 function controleerAntwoord(antwoord) {
+    if (antwoordGeselecteerd) return; // Voorkomt dat het antwoord opnieuw wordt gewijzigd
 
     let resultaat = document.getElementById('resultaat');
-    
+
     if (vragen[huidigeVraag].type === "meerkeuze") {
         if (antwoord === vragen[huidigeVraag].correct) {
             score++;
-            resultaat.textContent = "Correct!"
+            resultaat.textContent = "Correct!";
             resultaat.style.color = "lightgreen";
         } else {
-            resultaat.textContent = "Fout!"
+            resultaat.textContent = "Fout!";
             resultaat.style.color = "red";
         }
         antwoordGeselecteerd = true;
+
+        // Schakel alle antwoordopties uit na selectie
+        document.querySelectorAll(".ant-opties").forEach(optie => {
+            optie.style.pointerEvents = "none"; // Maakt ze niet meer klikbaar
+        });
+
+        document.querySelectorAll("input[name='answer']").forEach(input => {
+            input.disabled = true; // Voorkomt selectie van een andere optie
+        });
     }
 }
 
