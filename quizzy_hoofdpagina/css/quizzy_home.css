@@ -51,6 +51,7 @@ html, body {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
     cursor: pointer;
+    text-decoration: none;
 }
 .nav-items {
     display: flex;
@@ -126,6 +127,8 @@ html, body {
 #sec1-knop2 {
     font-family: "Alexandria", sans-serif;
     font-size: 20px;
+}
+#sec1-knop2 a {
     text-decoration: none;
     color: black;
 }
