@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let quizVraag = document.getElementById("quiz-vraag");
     let antwoordContainer = document.getElementById("antwoord-container");
     let resultaat = document.getElementById("resultaat");
-    let timerElement = document.createElement("p");
-    timerElement.id = "sec1-timer";
-    document.body.prepend(timerElement);
+
 
     let quiz = [
         { vraag: "In een democratie kiezen burgers hun vertegenwoordigers via verkiezingen.", opties: ["Juist", "Onjuist"], correct: 0 },
@@ -25,17 +23,29 @@ document.addEventListener("DOMContentLoaded", () => {
         { vraag: "Wat gebeurt er als een regering niet meer gesteund wordt door een meerderheid in het parlement?", type: "open", correct: "aftreden" }
     ];
 
+    let tijd = 0;
+    let timer = document.getElementById("sec1-timer");
+    let timerInterval;
+    
+    // Start de timer
+    
+    function startTimer() {
+        clearInterval(timerInterval);
+        tijd = 0;
+        timer.textContent = `Tijd: ${tijd} sec`;
+        timerInterval = setInterval(updateTimer, 1000); 
+    }
+    
+    // Update de timer steeds
+    
+    function updateTimer() {
+        tijd++; 
+        timer.textContent = `Tijd: ${tijd} sec`;
+    }
+    
     let huidigeVraag = 0;
     let score = 0;
-    let tijd = 0;
-    let timerInterval;
-
-    function startTimer() {
-        timerInterval = setInterval(() => {
-            tijd++;
-            timerElement.textContent = `Tijd: ${tijd} sec`;
-        }, 1000);
-    }
+    let antwoordGeselecteerd = false;
 
     function laadVraag() {
         const vraag = quiz[huidigeVraag];
@@ -51,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
             button.addEventListener("click", () => controleerOpenAntwoord(input.value));
             antwoordContainer.appendChild(input);
             antwoordContainer.appendChild(button);
+
         } else {
             vraag.opties.forEach((optie, index) => {
                 const button = document.createElement("button");
@@ -60,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 button.addEventListener("click", () => controleerAntwoord(index));
                 antwoordContainer.appendChild(button);
             });
+            startTimer();
         }
 
         // Verander de afbeelding bij elke vraag
