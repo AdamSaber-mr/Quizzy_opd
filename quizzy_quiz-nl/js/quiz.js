@@ -75,14 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
             "../foto's/leeftijdsbord-43593.png",
             "../foto's/plenaire_zaal_th_230821009.jpg",
             "../foto's/Red+pencil.jpg",
-            "../foto's/pvv-er-emiel-van-dijk-tijdens-een-debat-in-de-tweede-kamer-webp",
+            "../foto's/pvv-er-emiel-van-dijk-tijdens-een-debat-in-de-tweede-kamer.webp",
             "../foto's/3840x2160a.jpg",
-            "../foto's/https_www.webp",
+            "../foto's/https___www.webp",
             "../foto's/nederlandse-vlag-online-bestellen.gif",
             "../foto's/plenaire_zaal_th_230821009.jpg",
-            "../foto's/webwetten-en-regels-jpg",
+            "../foto's/webwetten-en-regels.jpg",
             "../foto's/698.jpg",
-            "../foto's/https__www.webp"
+            "../foto's/https___www.webp"
         ];
     
         if (huidigeVraag < afbeeldingen.length) {

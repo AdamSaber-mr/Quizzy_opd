@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         { vraag: "Welke politieke stroming past het best bij een democratie?", opties: ["Totalitarisme", "Autocratie", "Liberalisme", "Dictatuur"], correct: 2 },
         { vraag: "Wat gebeurt er als een wet in strijd is met de grondwet?", opties: ["De wet blijft geldig", "De rechter kan de wet ongeldig verklaren", "De koning beslist", "De minister-president past de wet aan"], correct: 1 },
         
-        // Open vragen
         { vraag: "Wat is het belangrijkste kenmerk van een democratie?", type: "open", correct: "vrijheid" },
         { vraag: "Welke groep mensen mag stemmen in een democratie?", type: "open", correct: "burgers" },
         { vraag: "Hoe heet het recht om te stemmen in verkiezingen?", type: "open", correct: "kiesrecht" },
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let timer = document.getElementById("sec1-timer");
     let timerInterval;
     
-    // Start de timer
     
     function startTimer() {
         clearInterval(timerInterval);
@@ -36,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
         timerInterval = setInterval(updateTimer, 1000); 
     }
     
-    // Update de timer steeds
     
     function updateTimer() {
         tijd++; 
@@ -56,9 +53,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const input = document.createElement("input");
             input.type = "text";
             input.id = "open-antwoord";
+            input.style.width = "300px";
+            input.style.height = "50px";
             const button = document.createElement("button");
             button.innerText = "Verstuur";
             button.addEventListener("click", () => controleerOpenAntwoord(input.value));
+            button.style.width = "150px";
+            button.style.height = "25px";
             antwoordContainer.appendChild(input);
             antwoordContainer.appendChild(button);
 
@@ -71,10 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 button.addEventListener("click", () => controleerAntwoord(index));
                 antwoordContainer.appendChild(button);
             });
-            startTimer();
         }
 
-        // Verander de afbeelding bij elke vraag
         veranderAfbeelding();
     }
 
@@ -89,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "../foto's 2/webwetten-en-regels.jpg",
             "../foto's 2/Wat-is-een-democratie-03-03.png",
             "../foto's 2/Red+pencil.jpg",
-            "../foto's 2/pvv-er-emiel-van-dijk-tijdens-een-debat-in-de-tweede-kamer-webp",
+            "../foto's 2/pvv-er-emiel-van-dijk-tijdens-een-debat-in-de-tweede-kamer.webp",
             "../foto's 2/webwetten-en-regels.jpg",
             "../foto's 2/webwetten-en-regels.jpg",
             "../foto's 2/college-1-site.jpg",
